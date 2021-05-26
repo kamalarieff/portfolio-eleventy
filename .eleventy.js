@@ -1,8 +1,42 @@
 const fs = require('fs');
+const { icon } = require('@fortawesome/fontawesome-svg-core');
+const {
+  faPlus,
+  faFolder,
+  faFile,
+} = require('@fortawesome/free-solid-svg-icons');
 
 module.exports = function (config) {
   config.setLiquidOptions({
     dynamicPartials: true,
+  });
+
+  config.addLiquidShortcode('yinyang', (width = '1em', height = '1em') => {
+    const temp2 = icon(faPlus, {
+      attributes: {
+        width,
+        height,
+      },
+    });
+    return `${temp2.html[0]}`;
+  });
+
+  config.addLiquidShortcode('faFolder', (width = '1em', height = '1em') => {
+    return icon(faFolder, {
+      attributes: {
+        width,
+        height,
+      },
+    }).html[0];
+  });
+
+  config.addLiquidShortcode('faFile', (width = '1em', height = '1em') => {
+    return icon(faFile, {
+      attributes: {
+        width,
+        height,
+      },
+    }).html[0];
   });
 
   // Static assets to pass through
@@ -25,6 +59,18 @@ module.exports = function (config) {
         });
       },
     },
+  });
+
+  config.addLiquidShortcode('user', function (name, twitterUsername) {
+    return `<div class="user">
+<div class="user_name">${name}</div>
+<div class="user_twitter">@${twitterUsername}</div>
+</div>`;
+  });
+
+  config.addLiquidShortcode('test', function (...args) {
+    console.log('######## args', args);
+    return '<span>icon</span>';
   });
 
   return {

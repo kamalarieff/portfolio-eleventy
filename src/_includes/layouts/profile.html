@@ -1,25 +1,25 @@
-{% layout 'base.html' %}
+---
+layout: layouts/base.html
+---
 
 {% block content %}
 <main id="main-content" tabindex="-1">
   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
     <h1 class="text-3xl font-bold leading-tight text-gray-900">
-      {{ intro.title }}
+      {{ hero.title }}
     </h1>
   </div>
 
-  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
     <div class="py-8 text-gray-600 leading-8">
       <p class="text-xl">
         {{ intro.desc }}
       </p>
     </div>
     <div class="prose prose-gray prose-lg text-gray-500">
-      {% include "partials/postslists.html" %}
       {{ content }}
     </div>
   </div>
-
-  {% include "partials/banner.html" %}
 </main>
 {% endblock %}

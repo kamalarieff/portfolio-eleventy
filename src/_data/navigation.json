@@ -5,6 +5,10 @@
       "url": "/"
     },
     {
+      "text": "Profile",
+      "url": "/profile"
+    },
+    {
       "text": "About",
       "url": "/about/"
     }

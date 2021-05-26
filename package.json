@@ -43,7 +43,7 @@
     "dev": "cross-env NODE_ENV=development run-s clean dev:*",
     "dev:snowpack": "snowpack dev",
     "build": "cross-env NODE_ENV=production run-s clean build:*",
-    "build:eleventy": "npx @11ty/eleventy",
+    "build:eleventy": "DEBUG=Eleventy* npx @11ty/eleventy",
     "build:snowpack": "snowpack build",
     "build:sw": "workbox generateSW",
     "lint": "run-s lint:*",
@@ -91,6 +91,8 @@
     "workbox-cli": "^6.1.5"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "alpinejs": "^2.8.2"
   }
 }
