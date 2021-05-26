@@ -1,6 +1,6 @@
 ---
 title: How I manage dotfiles with stow and git
-date: Last Modified
+date: 2020-12-23
 desc: TLDR; it is a tool to create symlinks from a directory to another directory. See the demo.
 ---
 

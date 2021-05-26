@@ -1,6 +1,9 @@
 <h2 class="text-2xl">Posts</h2>
 <ul>
    {% for item in collections.posts %}
-   <li><a href="{{ item.url }}">{{ item.data.title }}</a> <time>{{ item.data.date }}</time></li>
+   <li>
+     <a href="{{ item.url }}">{{ item.data.title }}</a>
+     <time datetime="{{ item.data.date | htmlDateString }}">{{ item.data.date | readableDate }}</time>
+   </li>
    {% endfor %}
 </ul>

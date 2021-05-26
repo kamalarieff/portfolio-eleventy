@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { DateTime } = require('luxon');
 const { icon } = require('@fortawesome/fontawesome-svg-core');
 const {
   faPlus,
@@ -56,6 +57,17 @@ module.exports = function (config) {
         height,
       },
     }).html[0];
+  });
+
+  config.addFilter('readableDate', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
+      'dd LLL yyyy',
+    );
+  });
+
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  config.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
   });
 
   // Static assets to pass through
