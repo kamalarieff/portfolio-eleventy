@@ -5,6 +5,7 @@ const {
   faFolder,
   faFile,
 } = require('@fortawesome/free-solid-svg-icons');
+const { faGithub, faLinkedin } = require('@fortawesome/free-brands-svg-icons');
 
 module.exports = function (config) {
   config.setLiquidOptions({
@@ -32,6 +33,24 @@ module.exports = function (config) {
 
   config.addLiquidShortcode('faFile', (width = '1em', height = '1em') => {
     return icon(faFile, {
+      attributes: {
+        width,
+        height,
+      },
+    }).html[0];
+  });
+
+  config.addLiquidShortcode('faGithub', (width = '1em', height = '1em') => {
+    return icon(faGithub, {
+      attributes: {
+        width,
+        height,
+      },
+    }).html[0];
+  });
+
+  config.addLiquidShortcode('faLinkedin', (width = '1em', height = '1em') => {
+    return icon(faLinkedin, {
       attributes: {
         width,
         height,
