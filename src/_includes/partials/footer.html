@@ -1,24 +1,26 @@
 <footer class="bg-gray-300 footer">
   <nav class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
-        <span>Built with <a class="hover:underline" href="https://www.11ty.dev">Eleventy</a> using <a class="hover:underline" href="https://github.com/stefanfrede/11st-starter-kit">11st starter kit</a>.</span>
+      <span>
+        Built with <a class="hover:underline" href="https://www.11ty.dev">Eleventy</a> using <a class="hover:underline" href="https://github.com/stefanfrede/11st-starter-kit">11st starter kit</a>.
+      </span>
       <ul class="flex space-x-4">
-        <li class="flex items-center space-x-2">
-          {% faGithub %}
+        <li>
           <a
             href="https://github.com/kamalarieff"
-            class="text-base font-bold underline hover:text-green-900"
+            class="flex items-center space-x-2 text-base font-bold underline hover:text-green-900"
           >
-            GitHub
+            {% faGithub %}
+            <span class="hidden sm:block">GitHub</span>
           </a>
         </li>
-        <li class="flex items-center space-x-2">
-          {% faLinkedin %}
+        <li>
           <a
             href="https://www.linkedin.com/in/kamal-arieff-ahmad-faizel-058b0a79"
-            class="text-base font-bold underline hover:text-green-900"
+            class="flex items-center space-x-2 text-base font-bold underline hover:text-green-900"
           >
-            LinkedIn
+            {% faLinkedin %}
+            <span class="hidden sm:block">LinkedIn</span>
           </a>
         </li>
       </ul>
