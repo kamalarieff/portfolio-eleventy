@@ -2,14 +2,12 @@
   <!-- Desktop -->
   <nav class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 hidden sm:block">
     <div class="flex justify-between items-center h-16">
-      <figure class="flex flex-shrink-0 items-center space-x-1">
-        <img
-          alt="11st starter-kit logo"
-          class="h-8 w-auto"
-          src="/images/11st-logo.svg"
-        />
-        <figcaption>Starter-Kit</figcaption>
-      </figure>
+      <a
+        href="/" 
+        class="text-xl font-bold"
+      >
+        Kamal Arieff
+      </a>
       <ul class="flex space-x-4">
         {% for item in navigation.items %}
           {% if item.url == page.url %}
