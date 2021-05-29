@@ -6,8 +6,9 @@
   <body
     class="min-h-screen bg-white"
     data-env="{{ node.env }}"
-    x-data="{ open: false }"
+    x-data="{ open: false, navOpen: false }"
     x-init="() => { setTimeout(() => { open = true }, 1500); }"
+    x-bind:class="{ 'overflow-y-hidden': navOpen }"
   >
     {% include "partials/site-header.html" %}
 
