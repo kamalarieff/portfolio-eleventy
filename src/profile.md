@@ -1,6 +1,8 @@
 ---
 layout: 'layouts/profile.html'
 title: Profile
+meta:
+  desc: Get to know more about me.
 intro:
   title: About me
 ---

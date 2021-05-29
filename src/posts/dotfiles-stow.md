@@ -1,6 +1,8 @@
 ---
 title: How I manage dotfiles with stow and git
 date: 2020-12-23
+meta:
+  desc: Managing dotfiles across multiple machines can be a pain. It doesn't have to be when you use stow and git.
 desc: TLDR; it is a tool to create symlinks from a directory to another directory. See the demo.
 ---
 
