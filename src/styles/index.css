@@ -2,7 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --footer-height: 4rem;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
 #stowFolderFile > span {
   @apply flex items-center space-x-2;
 }
 
+.footer {
+  @apply absolute bottom-0 w-full;
+
+  height: var(--footer-height);
+}
