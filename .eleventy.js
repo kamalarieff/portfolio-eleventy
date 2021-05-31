@@ -80,14 +80,16 @@ module.exports = function (config) {
   });
 
   config.addFilter('readableDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
-      'dd LLL yyyy',
-    );
+    return DateTime.fromJSDate(dateObj).toFormat('dd LLL yyyy');
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   config.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+    return DateTime.fromJSDate(dateObj).toFormat('yyyy-LL-dd');
+  });
+
+  config.addFilter('isoDate', (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toISO();
   });
 
   // Static assets to pass through
