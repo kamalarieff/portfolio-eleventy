@@ -1,4 +1,5 @@
-{% assign page_title = title | append: ' :: ' | append: site.name %}
+{% assign pipe = ' | ' | escape %}
+{% assign page_title = title | append: pipe | append: site.name %}
 
 {% if site.name == title %} 
   {% assign page_title = title %}
