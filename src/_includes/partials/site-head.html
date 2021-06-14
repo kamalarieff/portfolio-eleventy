@@ -55,6 +55,7 @@
 
 <link rel="preconnect" href="https://www.googletagmanager.com"/>
 
+{% if node.env == 'production' %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTFNHCM2S9"></script>
 <script>
@@ -64,3 +65,4 @@
 
   gtag('config', 'G-VTFNHCM2S9');
 </script>
+{% endif %}
