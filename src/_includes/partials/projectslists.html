@@ -1,0 +1,9 @@
+<h2 class="text-2xl">Projects</h2>
+<ul>
+   {% for item in collections.projects %}
+   <li>
+     <a href="{{ item.url }}">{{ item.data.title }}</a>
+     <time datetime="{{ item.data.date | htmlDateString }}">{{ item.data.date | readableDate }}</time>
+   </li>
+   {% endfor %}
+</ul>
