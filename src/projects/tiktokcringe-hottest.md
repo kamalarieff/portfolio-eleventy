@@ -1,6 +1,6 @@
 ---
 title: Filter /r/TikTokCringe by date
-date: 2021-06-12
+date: 2021-06-15
 meta:
   desc: Managing dotfiles across multiple machines can be a pain. It doesn't have to be when you use stow and git.
 desc: Filter the subreddit /r/TikTokCringe posts between two dates
@@ -16,7 +16,7 @@ Github: [https://github.com/kamalarieff/svelte-tiktokcringe](https://github.com/
 
 # Motivation
 
-I wanted to find a song from a post but I couldn't find it from reddit's top posts because it was two months ago at the time of writing. You can only filter the top posts by day, week, month, year or all time. So I built this in order to filter by date range.
+I wanted to find a song from a post but I couldn't find it from Reddit's top posts because it was two months ago at the time of writing. You can only filter the top posts by day, week, month, year or all time. So I built this in order to filter by date range.
 
 I also wanted to learn [Svelte](https://svelte.dev/). So I figured this would be a good chance to do so.
 
@@ -35,6 +35,8 @@ So in order to get posts from two months ago, we need to get the posts from the 
  That's why you'll see the number of posts are not the same as the page before when you click next. This is because of that hack.
 
 I've tried to use the third party API [redditsearch](https://github.com/pushshift/api) but the responses don't have the updated score.
+
+The videos also don't have any sound. This is because Reddit splice their videos into separate video and audio files.  I haven't found a way to fix this yet.
 
 # What I've learned
 
