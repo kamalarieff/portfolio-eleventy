@@ -8,7 +8,7 @@ desc: Filter the subreddit /r/TikTokCringe posts between two dates
 
 # Demo
 
-![svelte tiktokcringe demo](/images/ezgif.com-gif-maker.webp)
+![svelte tiktokcringe demo](/images/svelte-tiktokcringe-demo.webp)
 
 Link: [https://compassionate-wozniak-389864.netlify.app](https://compassionate-wozniak-389864.netlify.app)
 
