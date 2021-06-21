@@ -1,0 +1,66 @@
+{
+  "personalDetails": {
+    "fullName": "Kamal Arieff Ahmad Faizel",
+    "position": "Full Stack Software Engineer",
+    "phone": "+60129500092",
+    "email": "kamal.arieff@gmail.com",
+    "partialAddress": "Selangor 47600, Malaysia",
+    "fullAddress": "No. 23 USJ 2/4H<br />Subang Jaya<br />Selangor 47600, Malaysia"
+  },
+  "objective": "Looking for a role that challenges my technical expertise as well as develop my leadership skills. I would like to learn how to be a leader where I can create a productive and nurturing culture.",
+  "traits": [
+    "Fast Learner",
+    "Efficient Communicator",
+    "Team Player",
+    "Responsible"
+  ],
+  "hobbies": ["Programming", "Football", "Cycling"],
+  "workExperience": [
+    {
+      "date": "Feb 2019 - Present",
+      "company": "Mudah.my",
+      "position": "Senior Software Engineer",
+      "responsibilities": [
+        "Sole creator and developer of an API built on Node.js used for converting SEO friendly urls to search engine params. It uses redis as a caching backend mechanism. Tests are written with Mocha, Sinon and Chai. API documentation is written with Swagger",
+        "Lead developer in migrating legacy code to modern tooling and frameworks consisting of NextJS, React, TypeScript, Redux, ReduxSaga and MaterialUI. This involves creating and maintaining the new mobile and desktop web. Integration tests are written using Jest and testing-library. E2E tests are written with Cypress. Visual regression tests are handled by Percy.",
+        "Maintaining a UI component library built with Tailwind, MaterialUI, TypeScript and Rollup with support for Storybook",
+        "Ensure developer experience is smooth by incorporating Docker and Gitlab CICD into the workflow. This includes automating development setup, tests, releases and post releases. Automatic CHANGELOGs are generated via conventional commit messages."
+      ]
+    },
+    {
+      "date": "Feb 2018 - Jan 2019",
+      "company": "Mudah.my",
+      "position": "Software Engineer",
+      "responsibilities": [
+        "Responsible for user authentication and authorization written in PHP Phalcon i.e. server load, user issues, documentation for API, regression tests.",
+        "Responsible for the chat application which involves using Node.js, NoSQL DB and sockets for the backend and real time notifications and React for the front end."
+      ]
+    },
+    {
+      "date": "Nov 2014 - Feb 2015",
+      "company": "Brilliance Information",
+      "position": "Intern",
+      "responsibilities": [
+        "Involved in the development, testing and debugging of the websites. Used C# and .Net framework."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "date": "2012 - 2016",
+      "schoolName": "University of Adelaide",
+      "courseName": "Bachelor of Engineering(BEng), Computer Software Engineering",
+      "description": "Learnt various aspects of the software world. This includes computer architecture, networks, event driven computing, web and database systems, algorithms and data structures and object oriented programming. Had two projects, one for the University of Adelaide and another for a real estate company called RayWhite."
+    }
+  ],
+  "technicalSkills": [
+    "Node.js",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Tailwind",
+    "Docker"
+  ]
+}
