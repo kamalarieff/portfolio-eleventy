@@ -7,6 +7,9 @@ const {
   faFile,
   faBars,
   faTimes,
+  faPhoneAlt,
+  faEnvelope,
+  faMapMarkerAlt,
 } = require('@fortawesome/free-solid-svg-icons');
 const { faGithub, faLinkedin } = require('@fortawesome/free-brands-svg-icons');
 
@@ -78,6 +81,39 @@ module.exports = function (config) {
       },
     }).html[0];
   });
+
+  config.addLiquidShortcode('faPhoneAlt', (width = '1em', height = '1em') => {
+    return icon(faPhoneAlt, {
+      attributes: {
+        width,
+        height,
+      },
+      classes: ['text-blue-500'],
+    }).html[0];
+  });
+
+  config.addLiquidShortcode('faEnvelope', (width = '1em', height = '1em') => {
+    return icon(faEnvelope, {
+      attributes: {
+        width,
+        height,
+      },
+      classes: ['text-blue-500'],
+    }).html[0];
+  });
+
+  config.addLiquidShortcode(
+    'faMapMarkerAlt',
+    (width = '1em', height = '1em') => {
+      return icon(faMapMarkerAlt, {
+        attributes: {
+          width,
+          height,
+        },
+        classes: ['text-blue-500'],
+      }).html[0];
+    },
+  );
 
   config.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat('dd LLL yyyy');

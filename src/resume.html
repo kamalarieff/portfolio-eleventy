@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="/styles/index.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- TODO: can delete this after -->
         <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -24,72 +25,96 @@
                     </p>
                 </div>
                 <div class="w-1/4 flex flex-col justify-center">
-                    <span>{{ resume.personalDetails.phone }}</span>
-                    <span>{{ resume.personalDetails.email }}</span>
-                    <span>{{ resume.personalDetails.partialAddress}}</span>
+                    <div class="flex space-x-2 items-center">
+                        {% faPhoneAlt %}
+                        <span>{{ resume.personalDetails.phone }}</span>
+                    </div>
+                    <div class="flex space-x-2 items-center">
+                        {% faEnvelope %}
+                        <span>{{ resume.personalDetails.email }}</span>
+                    </div>
+                    <div class="flex space-x-2 items-center">
+                        {% faMapMarkerAlt %}
+                        <span>{{ resume.personalDetails.partialAddress}}</span>
+                    </div>
                 </div>
             </div>
             <hr class="my-8" />
-            <p class="text-blue-500 font-bold uppercase">Objective</p>
-            <p>
-                {{ resume.objective }}
-            </p>
-            <!-- Work -->
-            <p class="text-blue-500 font-bold uppercase">Work Experience</p>
-            {% for item in resume.workExperience %}
-                <div class="flex justify-between">
-                    <p class="font-bold">{{ item.company }}</p>
-                    <p>{{ item.date }}</p>
+            <!-- Main content starts here -->
+            <section class="flex flex-col space-y-8">
+                <div>
+                    <p class="text-blue-500 font-bold uppercase">Objective</p>
+                    <p>
+                        {{ resume.objective }}
+                    </p>
                 </div>
-                <p>{{ item.position }}</p>
-                <ul class="list-disc list-inside">
-                    {% for responsibility in item.responsibilities %}
-                        <li>
-                            {{ responsibility }}
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% endfor %}
-            <!-- Education -->
-            <p class="text-blue-500 font-bold uppercase">Education</p>
-            {% for item in resume.education %}
-                <div class="flex justify-between">
-                    <p class="font-bold">{{ item.schoolName }}</p>
-                    <p>{{ item.date }}</p>
-                </div>
-                <p>{{ item.courseName }}</p>
-                <ul class="list-disc list-inside">
-                    <li>
-                        {{ item.description }}
-                    </li>
-                </ul>
-            {% endfor %}
-            <!-- Traits & Hobbies -->
-            <div class="flex">
-                <div class="flex-1">
-                    <p class="text-blue-500 font-bold uppercase">Traits</p>
-                    <div class="flex flex-wrap">
-                    {% for item in resume.traits %}
-                        <span class="px-4 py-2 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
-                    {% endfor %}
+                <!-- Work -->
+                <div>
+                    <p class="text-blue-500 font-bold uppercase">Work Experience</p>
+                    <div class="space-y-2">
+                        {% for item in resume.workExperience %}
+                            <div>
+                                <div class="flex justify-between">
+                                    <p class="font-bold">{{ item.company }}</p>
+                                    <p class="font-medium text-gray-600">{{ item.date }}</p>
+                                </div>
+                                <p>{{ item.position }}</p>
+                            </div>
+                            <ul class="list-disc list-inside">
+                                {% for responsibility in item.responsibilities %}
+                                    <li>
+                                        {{ responsibility }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endfor %}
                     </div>
                 </div>
-                <div class="flex-1">
-                    <p class="text-blue-500 font-bold uppercase">Hobbies</p>
-                    <div class="flex flex-wrap">
-                    {% for item in resume.hobbies %}
-                        <span class="px-4 py-2 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
+                <!-- Education -->
+                <div>
+                    <p class="text-blue-500 font-bold uppercase">Education</p>
+                    {% for item in resume.education %}
+                        <div class="flex justify-between">
+                            <p class="font-bold">{{ item.schoolName }}</p>
+                            <p>{{ item.date }}</p>
+                        </div>
+                        <p>{{ item.courseName }}</p>
+                        <ul class="list-disc list-inside">
+                            <li>
+                                {{ item.description }}
+                            </li>
+                        </ul>
                     {% endfor %}
+                </div>
+                <!-- Traits & Hobbies -->
+                <div class="flex">
+                    <div class="flex-1">
+                        <p class="text-blue-500 font-bold uppercase">Traits</p>
+                        <div class="flex flex-wrap text-sm">
+                        {% for item in resume.traits %}
+                            <span class="px-4 py-2 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
+                        {% endfor %}
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-blue-500 font-bold uppercase">Hobbies</p>
+                        <div class="flex flex-wrap text-sm">
+                        {% for item in resume.hobbies %}
+                            <span class="px-4 py-2 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
+                        {% endfor %}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Technical Skills -->
-            <p class="text-blue-500 font-bold uppercase">Technical Skills</p>
-            <ul class="list-disc list-inside">
-            {% for item in resume.technicalSkills %}
-                <li>{{ item }}</li>
-            {% endfor %}
-            </ul>
+                <!-- Technical Skills -->
+                <div>
+                    <p class="text-blue-500 font-bold uppercase">Technical Skills</p>
+                    <ul class="list-disc list-inside">
+                    {% for item in resume.technicalSkills %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </section>
         </main>
     </body>
 </html>
