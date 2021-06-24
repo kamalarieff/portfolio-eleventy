@@ -17,31 +17,38 @@
   "hobbies": ["Programming", "Football", "Cycling"],
   "workExperience": [
     {
-      "date": "Feb 2019 - Present",
       "company": "Mudah.my",
-      "position": "Senior Software Engineer",
-      "responsibilities": [
-        "Sole creator and developer of an API built on Node.js used for converting SEO friendly urls to search engine params. It uses redis as a caching backend mechanism. Tests are written with Mocha, Sinon and Chai. API documentation is written with Swagger",
-        "Lead developer in migrating legacy code to modern tooling and frameworks consisting of NextJS, React, TypeScript, Redux, ReduxSaga and MaterialUI. This involves creating and maintaining the new mobile and desktop web. Integration tests are written using Jest and testing-library. E2E tests are written with Cypress. Visual regression tests are handled by Percy.",
-        "Maintaining a UI component library built with Tailwind, MaterialUI, TypeScript and Rollup with support for Storybook",
-        "Ensure developer experience is smooth by incorporating Docker and Gitlab CICD into the workflow. This includes automating development setup, tests, releases and post releases. Automatic CHANGELOGs are generated via conventional commit messages."
+      "jobExperience": [
+        {
+          "date": "Feb 2019 - Present",
+          "position": "Senior Software Engineer",
+          "responsibilities": [
+            "Sole creator and developer of an API built on Node.js used for converting SEO friendly urls to search engine params. It uses redis as a caching backend mechanism. Tests are written with Mocha, Sinon and Chai. API documentation is written with Swagger",
+            "Lead developer in migrating legacy code to modern tooling and frameworks consisting of NextJS, React, TypeScript, Redux, ReduxSaga and MaterialUI. This involves creating and maintaining the new mobile and desktop web. Integration tests are written using Jest and testing-library. E2E tests are written with Cypress. Visual regression tests are handled by Percy.",
+            "Maintaining a UI component library built with Tailwind, MaterialUI, TypeScript and Rollup with support for Storybook",
+            "Ensure developer experience is smooth by incorporating Docker and Gitlab CICD into the workflow. This includes automating development setup, tests, releases and post releases. Automatic CHANGELOGs are generated via conventional commit messages."
+          ]
+        },
+        {
+          "date": "Feb 2018 - Jan 2019",
+          "position": "Software Engineer",
+          "responsibilities": [
+            "Responsible for user authentication and authorization written in PHP Phalcon i.e. server load, user issues, documentation for API, regression tests.",
+            "Responsible for the chat application which involves using Node.js, NoSQL DB and sockets for the backend and real time notifications and React for the front end."
+          ]
+        }
       ]
     },
     {
-      "date": "Feb 2018 - Jan 2019",
-      "company": "Mudah.my",
-      "position": "Software Engineer",
-      "responsibilities": [
-        "Responsible for user authentication and authorization written in PHP Phalcon i.e. server load, user issues, documentation for API, regression tests.",
-        "Responsible for the chat application which involves using Node.js, NoSQL DB and sockets for the backend and real time notifications and React for the front end."
-      ]
-    },
-    {
-      "date": "Nov 2014 - Feb 2015",
       "company": "Brilliance Information",
-      "position": "Intern",
-      "responsibilities": [
-        "Involved in the development, testing and debugging of the websites. Used C# and .Net framework."
+      "jobExperience": [
+        {
+          "date": "Nov 2014 - Feb 2015",
+          "position": "Intern",
+          "responsibilities": [
+            "Involved in the development, testing and debugging of the websites. Used C# and .Net framework."
+          ]
+        }
       ]
     }
   ],

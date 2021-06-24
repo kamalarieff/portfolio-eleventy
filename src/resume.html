@@ -1,3 +1,6 @@
+---
+eleventyExcludeFromCollections: true
+---
 <html>
     <head>
         <link rel="stylesheet" href="/styles/index.css" />
@@ -11,7 +14,7 @@
         </style>
     </head>
     <body>
-        <main>
+        <main class="font-medium text-sm">
             <div class="flex">
                 <div class="w-3/4 flex flex-col space-y-2">
                     <h1 class="text-4xl text-blue-500 tracking-wide font-bold">
@@ -39,40 +42,42 @@
                     </div>
                 </div>
             </div>
-            <hr class="my-8" />
+            <hr class="my-4" />
             <!-- Main content starts here -->
-            <section class="flex flex-col space-y-8">
+            <section class="flex flex-col space-y-4">
                 <div>
-                    <p class="text-blue-500 font-bold uppercase">Objective</p>
+                    <p class="text-blue-500 font-bold uppercase mb-2">Objective</p>
                     <p>
                         {{ resume.objective }}
                     </p>
                 </div>
                 <!-- Work -->
                 <div>
-                    <p class="text-blue-500 font-bold uppercase">Work Experience</p>
+                    <p class="text-blue-500 font-bold uppercase mb-2">Work Experience</p>
                     <div class="space-y-2">
                         {% for item in resume.workExperience %}
-                            <div>
-                                <div class="flex justify-between">
-                                    <p class="font-bold">{{ item.company }}</p>
-                                    <p class="font-medium text-gray-600">{{ item.date }}</p>
+                            <p class="font-bold">{{ item.company }}</p>
+                            {% for jobExperience in item.jobExperience %}
+                                <div>
+                                    <div class="flex justify-between">
+                                        <p class="font-bold">{{ jobExperience.position }}</p>
+                                        <p class="font-medium text-gray-600">{{ jobExperience.date }}</p>
+                                    </div>
                                 </div>
-                                <p>{{ item.position }}</p>
-                            </div>
-                            <ul class="list-disc list-inside">
-                                {% for responsibility in item.responsibilities %}
-                                    <li>
-                                        {{ responsibility }}
-                                    </li>
-                                {% endfor %}
-                            </ul>
+                                <ul class="list-disc list-inside">
+                                    {% for responsibility in jobExperience.responsibilities %}
+                                        <li>
+                                            {{ responsibility }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endfor %}
                         {% endfor %}
                     </div>
                 </div>
                 <!-- Education -->
                 <div>
-                    <p class="text-blue-500 font-bold uppercase">Education</p>
+                    <p class="text-blue-500 font-bold uppercase mb-2">Education</p>
                     {% for item in resume.education %}
                         <div class="flex justify-between">
                             <p class="font-bold">{{ item.schoolName }}</p>
@@ -86,33 +91,33 @@
                         </ul>
                     {% endfor %}
                 </div>
+                <!-- Technical Skills -->
+                <div>
+                    <p class="text-blue-500 font-bold uppercase mb-2">Technical Skills</p>
+                    <div class="flex flex-wrap text-xs">
+                    {% for item in resume.technicalSkills %}
+                        <span class="px-2 py-1 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
+                    {% endfor %}
+                    </div>
+                </div>
                 <!-- Traits & Hobbies -->
                 <div class="flex">
                     <div class="flex-1">
-                        <p class="text-blue-500 font-bold uppercase">Traits</p>
-                        <div class="flex flex-wrap text-sm">
+                        <p class="text-blue-500 font-bold uppercase mb-2">Traits</p>
+                        <div class="flex flex-wrap text-xs">
                         {% for item in resume.traits %}
-                            <span class="px-4 py-2 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
+                            <span class="px-2 py-1 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
                         {% endfor %}
                         </div>
                     </div>
                     <div class="flex-1">
-                        <p class="text-blue-500 font-bold uppercase">Hobbies</p>
-                        <div class="flex flex-wrap text-sm">
+                        <p class="text-blue-500 font-bold uppercase mb-2">Hobbies</p>
+                        <div class="flex flex-wrap text-xs">
                         {% for item in resume.hobbies %}
-                            <span class="px-4 py-2 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
+                            <span class="px-2 py-1 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
                         {% endfor %}
                         </div>
                     </div>
-                </div>
-                <!-- Technical Skills -->
-                <div>
-                    <p class="text-blue-500 font-bold uppercase">Technical Skills</p>
-                    <ul class="list-disc list-inside">
-                    {% for item in resume.technicalSkills %}
-                        <li>{{ item }}</li>
-                    {% endfor %}
-                    </ul>
                 </div>
             </section>
         </main>
