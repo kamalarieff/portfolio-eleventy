@@ -15,6 +15,10 @@ I use VIM for coding and Emacs `org-mode` and `org-roam` for notetaking.
 
 I am currently rocking a ZSA moonlander with Cherry MX Brown and Logitech MX Ergo for my peripherals.
 
+---
+
+<a class="p-4 shadow-md rounded-md bg-blue-500 !text-white !no-underline" download href="/Kamal Arieff Ahmad Faizel Resume.pdf" rel="noindex">Download My Resume</a>
+
 ## Work Experience
 
 ### Mudah.my

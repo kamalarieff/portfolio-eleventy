@@ -162,6 +162,8 @@ module.exports = function (config) {
     return '<span>icon</span>';
   });
 
+  config.addPassthroughCopy('**/Kamal Arieff Ahmad Faizel Resume.pdf');
+
   return {
     dir: {
       input: 'src',
