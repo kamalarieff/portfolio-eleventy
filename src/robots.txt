@@ -2,4 +2,4 @@
 Sitemap: https://www.kamalarieff.com/sitemap.xml
 
 User-agent: *
-Disallow:
+Disallow: /resume
