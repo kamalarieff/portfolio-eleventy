@@ -17,7 +17,7 @@ I am currently rocking a ZSA moonlander with Cherry MX Brown and Logitech MX Erg
 
 ---
 
-<a class="p-4 shadow-md rounded-md bg-blue-500 !text-white !no-underline" download href="/Kamal Arieff Ahmad Faizel Resume.pdf" rel="noindex">Download My Resume</a>
+<a class="p-4 shadow-md rounded-md bg-blue-600 !text-white !no-underline" download href="/Kamal Arieff Ahmad Faizel Resume.pdf" rel="noindex">Download My Resume</a>
 
 ## Work Experience
 
