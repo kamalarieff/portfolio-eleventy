@@ -7,7 +7,7 @@
     "partialAddress": "Selangor 47600, Malaysia",
     "fullAddress": "No. 23 USJ 2/4H<br />Subang Jaya<br />Selangor 47600, Malaysia"
   },
-  "objective": "Looking for a role that challenges my technical expertise as well as develop my leadership skills. I would like to learn how to be a leader where I can create a productive and nurturing culture.",
+  "objective": "Looking for a role that challenges my technical expertise as well as develop my leadership skills. I would like to learn how to be a leader where I can create a productive and nurturing culture. Learning a new language/framework is not an issue for me. In fact, I welcome it.",
   "traits": [
     "Fast Learner",
     "Efficient Communicator",
@@ -35,6 +35,14 @@
           "responsibilities": [
             "Responsible for user authentication and authorization written in PHP Phalcon i.e. server load, user issues, documentation for API, regression tests.",
             "Responsible for the chat application which involves using Node.js, NoSQL DB and sockets for the backend and real time notifications and React for the front end."
+          ]
+        },
+        {
+          "date": "Aug 2016 - Jan 2018",
+          "position": "Associate Software Engineer",
+          "responsibilities": [
+            "Debug and maintain an inhouse framework called Blocket.",
+            "Provide support for the Android team by working closely with them on the User Accounts API."
           ]
         }
       ]
