@@ -54,9 +54,9 @@ Here were the steps:
     `manjaro-chroot` provides a helper to scan any mounted devices with the use of the `-a` flag. Otherwise, you would have to manually mount the boot device. You can read more about it [here](https://wiki.manjaro.org/index.php/GRUB/Restore_the_GRUB_Bootloader#Chroot_environment).
 
 5.  Edit `etc/mkinitcpio.conf` as shown in the link
-    ```diff
-    -#COMPRESSION="lz4"
-    +COMPRESSION="lz4"
+    ``` text/1/0
+    #COMPRESSION="lz4"
+    COMPRESSION="lz4"
     ```
 6.  Run `mkinitcpio -P`
     `mkinitcpio` is a script to create an `initrd` (initial ramdisk) environment  also known as `initramfs`.

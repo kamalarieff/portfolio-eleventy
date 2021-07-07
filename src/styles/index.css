@@ -20,3 +20,15 @@ body {
 
   height: var(--footer-height);
 }
+
+.highlight-line {
+  @apply no-underline;
+}
+
+.highlight-line-add {
+  @apply bg-green-800;
+}
+
+.highlight-line-remove {
+  @apply bg-red-700;
+}

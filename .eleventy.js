@@ -12,8 +12,11 @@ const {
   faMapMarkerAlt,
 } = require('@fortawesome/free-solid-svg-icons');
 const { faGithub, faLinkedin } = require('@fortawesome/free-brands-svg-icons');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+
 
 module.exports = function (config) {
+  config.addPlugin(syntaxHighlight);
   config.setLiquidOptions({
     dynamicPartials: true,
   });
