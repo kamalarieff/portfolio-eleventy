@@ -26,10 +26,6 @@ eleventyExcludeFromCollections: true
                 </div>
                 <div class="w-1/4 flex flex-col justify-center">
                     <div class="flex space-x-2 items-center">
-                        {% faPhoneAlt %}
-                        <span>{{ resume.personalDetails.phone }}</span>
-                    </div>
-                    <div class="flex space-x-2 items-center">
                         {% faEnvelope %}
                         <span>{{ resume.personalDetails.email }}</span>
                     </div>
@@ -95,25 +91,6 @@ eleventyExcludeFromCollections: true
                     {% for item in resume.technicalSkills %}
                         <span class="px-2 py-1 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
                     {% endfor %}
-                    </div>
-                </div>
-                <!-- Traits & Hobbies -->
-                <div class="flex">
-                    <div class="flex-1">
-                        <p class="text-blue-500 font-bold uppercase mb-2">Traits</p>
-                        <div class="flex flex-wrap text-xs">
-                        {% for item in resume.traits %}
-                            <span class="px-2 py-1 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
-                        {% endfor %}
-                        </div>
-                    </div>
-                    <div class="flex-1">
-                        <p class="text-blue-500 font-bold uppercase mb-2">Hobbies</p>
-                        <div class="flex flex-wrap text-xs">
-                        {% for item in resume.hobbies %}
-                            <span class="px-2 py-1 rounded-2xl text-white bg-gray-800 mr-1 mt-1">{{ item }}</span>
-                        {% endfor %}
-                        </div>
                     </div>
                 </div>
             </section>
