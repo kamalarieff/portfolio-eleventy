@@ -94,6 +94,10 @@ Oryx is really nice to use. But it doesn&rsquo;t support all the functionalities
 
 I did have some trouble setting QMK up initially. I asked for some help in [reddit](https://www.reddit.com/r/ergodox/comments/pd74yp/how_do_i_compile_the_source_code_i_got_from_oryx/) and someone answered.
 
+I use <kbd>[</kbd> and <kbd>]</kbd> a lot. Unfortunately for me, these two keys are in a separate layer when I actually wanted it to be on the base layer but I've run out of keys. That's where combos come in. I made two combos; pressing <kbd>I</kbd>+<kbd>O</kbd> and <kbd>O</kbd>+<kbd>P</kbd> gave me <kbd>[</kbd> and <kbd>]</kbd> respectively 👍.
+
+I've barely scratched the surface with combos. You should see what [/u/seancolsen](https://www.reddit.com/user/seancolsen) did in his reddit post [My 36 key layout with only 2 layers — and lots of combos!](https://www.reddit.com/r/ErgoMechKeyboards/comments/ifrd24/my_36_key_layout_with_only_2_layers_and_lots_of/)
+
 You can follow my guide here on how to set it up.
 
 ## Switching to normal keyboards
