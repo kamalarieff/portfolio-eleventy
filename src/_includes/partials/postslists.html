@@ -1,6 +1,6 @@
 <h2 class="text-2xl">Posts</h2>
 <ul>
-   {% for item in collections.posts %}
+   {% for item in collections.posts reversed %}
    <li>
      <a href="{{ item.url }}">{{ item.data.title }}</a>
      <time datetime="{{ item.data.date | htmlDateString }}">{{ item.data.date | readableDate }}</time>
