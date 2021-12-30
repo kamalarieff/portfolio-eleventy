@@ -6,10 +6,14 @@ meta:
 desc: TLDR; it takes a while to learn steno but the experience gets better when you make some modifications.
 ---
 
-<video width="600" height="340" controls class="m-auto">
-  <source src="/images/monkeytype-demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="flex flex-col justify-center content-center mb-8">
+  <span class="m-auto">Demo video.</span>
+  <video width="600" height="340" controls class="!mt-2 !mb-2">
+    <source src="/images/monkeytype-demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <span class="m-auto text-xs">Shout out to my sister who helped me record this video.</span>
+</div>
 
 # Motivation
 
@@ -225,6 +229,6 @@ Currently, most of my typos come from missing key presses by my pinkies because 
 
 # Conclusion
 
-Learning steno is hard. It will take a long time before I can be proficient in it. With these modifications, it will surely make my journey easier. I will get better.
+Learning steno is hard. It will take a long time before I can be proficient in it. With these modifications, it can make my journey easier. I will continue using it and I will get better.
 
 Fun fact: 95% of this article is written in steno.
