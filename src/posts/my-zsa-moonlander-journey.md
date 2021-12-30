@@ -17,9 +17,9 @@ My previous keyboard was Ducky One 2 TKL. I knew that keyboard has built in cust
 
 I also wanted a more ergonomic keyboard as I want to have a long and healthy career in software development. After some digging, the answer seems to point to split keyboards.
 
-## Orthogonal
+## Columnar
 
-I am also practicing stenography on my keyboard. Steno is the practice of typing in shorthand. If you have watched any lawyer TV shows, there is person who types out everything the people were saying. That person is a stenographer and practicing stenography. You can achieve this by using [Plover](https://github.com/openstenoproject/plover). So I figured that having an orthogonal keyboard would help in this area.
+I am also practicing stenography on my keyboard. Steno is the practice of typing in shorthand. If you have watched any lawyer TV shows, there is person who types out everything the people were saying. That person is a stenographer and practicing stenography. You can achieve this by using [Plover](https://github.com/openstenoproject/plover). So I figured that having an columnar keyboard would help in this area.
 
 After doing some researching, I finally settled on the ZSA Moonlander.
 
@@ -27,7 +27,7 @@ After doing some researching, I finally settled on the ZSA Moonlander.
 
 # Price
 
-A lot of reviews mentioned the high cost of this keyboard. I also have my take on it.
+A lot of reviews mentioned the high cost of this keyboard. Here's my take on it:
 
 For me, expensive is a relative term. I may not have a gauge on what is expensive or not since this is my first time buying a truly expensive keyboard. I think paying 300 dollars for a well built, respectable company, 2 years warrany, good customer support, friendly configurator UI is well worth the money.
 
@@ -57,7 +57,7 @@ Try to get the tenting legs if possible or you can 3D print one (I have no exper
 
 ## Two times my speed plummeted
 
-### First was the change to orthogonal
+### First was the change to columnar
 
 I was so used to hitting the <kbd>B</kbd>, <kbd>N</kbd>, <kbd>T</kbd> and <kbd>Y</kbd> keys with my left index finger. Having them on different splits really brought down my WPM. It took me about two weeks just to get this muscle memory going. My objective here was very simple: I had to train my fingers to fire faster than my brain.
 
