@@ -36,7 +36,7 @@ Stenography is writing in shorthand. Instead of typing words by each letter, you
 
 If you want to know how it works, check out [Art of Chording](https://www.artofchording.com/).
 
-I used [Plover](https://www.openstenoproject.org/plover/) from the Open Steno project to enable steno typing on my keyboard.
+I used [Plover](https://www.openstenoproject.org/plover/) from the Open Steno project to enable steno writing on my keyboard.
 
 # Journey
 
@@ -58,7 +58,7 @@ I bought the [Moonlander](https://www.zsa.io/moonlander/) because it is a column
     </figure>
 </div>
 
-By having a columnar keyboard, it is much easier to type those chords.
+By having a columnar keyboard, it is much easier to write those chords.
 
 My strategy for learning steno was to get the muscle memory baked into my fingers. The goal here is to have my fingers move faster than my brain. It took me 4 months to achieve this. I would spend 20 minutes a day practicing on [Steno Jig](https://joshuagrams.github.io/steno-jig/learn-keyboard.html).
 
@@ -70,7 +70,7 @@ At the time of writing, I can type at 80 wpm.
 
 ## QMK
 
-The only way to get better is to do it a lot. This means that you type in steno for everything from git commits and Slack messages to documentation and thank you emails. The keyboard needs to seamlessly switch between normal mode and steno mode. There is a [stenography config](https://docs.qmk.fm/#/feature_stenography) for this in QMK but I wasn't too sure if it worked with my Moonlander due to this disclaimer:
+The only way to get better is to do it a lot. This means that you write in steno for everything from git commits and Slack messages to documentation and thank you emails. The keyboard needs to seamlessly switch between normal mode and steno mode. There is a [stenography config](https://docs.qmk.fm/#/feature_stenography) for this in QMK but I wasn't too sure if it worked with my Moonlander due to this disclaimer:
 
 > Note: Due to hardware limitations you may not be able to run both a virtual serial port and mouse emulation at the same time.
 
@@ -209,7 +209,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 ## Keycap profiles
 
-The key caps that came with the Moonlander Glow version are from the OEM profile. It doesn't offer good steno typing experience because the keycaps are sculptured where each row of keys is differently shaped. I needed a keycap profile where the keys are uniform and the gaps between the keys are small. I decided on the XDA V2 GENTLEMAN that I got from [KPRepublic](https://kprepublic.com/).
+The key caps that came with the Moonlander Glow version are from the OEM profile. It doesn't offer good steno writing experience because the keycaps are sculptured where each row of keys is differently shaped. I needed a keycap profile where the keys are uniform and the gaps between the keys are small. I decided on the XDA V2 GENTLEMAN that I got from [KPRepublic](https://kprepublic.com/).
 
 After changing the key caps, I do feel a bit better because the edges between the key caps are much closer now so it's easier to press multiple keys. But it didn't made me faster by any mean. That comes down to practice.
 
@@ -217,11 +217,11 @@ In normal keyboard mode, these key caps are very comfortable. Even if you don't 
 
 # Verdict
 
-Meh. I feel like typing in steno is much more useful in a courtroom or live captioning setting where you don't have to compose sentences. In a workplace setting, I think it could work when typing meeting notes where you want to quickly jot down points. But writing documentation? Not so much.
+Meh. I feel like writing in steno is much more useful in a courtroom or live captioning setting where you don't have to compose sentences. In a workplace setting, I think it could work when writing meeting notes where you want to quickly jot down points. But writing documentation? Not so much.
 
-One clear benefit is that I can type much longer in steno compared to the standard way of typing because you press less and you move your fingers less. There's less strain on my hands.
+One clear benefit is that I can write much longer in steno compared to the standard way of typing because you press less and you move your fingers less. There's less strain on my hands.
 
-As you only type full words in steno, you get a different type of typo. Spelling gets better but sometimes you'd have wrong words entirely.
+As you only write full words in steno, you get a different type of typo. Spelling gets better but sometimes you'd have wrong words entirely.
 
 # Future
 
