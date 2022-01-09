@@ -23,8 +23,8 @@
           "date": "Feb 2019 - Present",
           "position": "Senior Software Engineer",
           "responsibilities": [
+            "Ported the SEO converter API from <a href='https://nodejs.org/'>Node.js</a> to <a href='https://go.dev/'>Golang</a> for better performance and better use of resources. At the same time, new URL patterns are also introduced which increased complexity. Moved from imperative style of coding to declaration to handle the complexity. Additionally, created a sitemap service to generate all possible URLs in Golang that reads from a config API. Used <a href='https://kubernetes.io/docs/concepts/workloads/controllers/job/'>Kubernetes Jobs</a> that runs daily to generate these sitemaps and upload them to <a href='https://cloud.google.com/storage'>Google Cloud Storage</a>.",
             "Sole creator and developer of an API built on <a href='https://nodejs.org/'>Node.js</a> used for converting SEO friendly urls to search engine params. It uses <a href='https://redis.io/'>redis</a> as a caching backend mechanism. Tests are written with <a href='https://mochajs.org/'>Mocha</a>, <a href='https://sinonjs.org/'>Sinon</a> and <a href='https://www.chaijs.com/'>Chai</a>. API documentation is written with <a href='https://swagger.io/'>Swagger</a>",
-
             "Lead developer in migrating legacy code to modern tooling and frameworks consisting of <a href='https://nextjs.org/'>NextJS</a>, <a href='https://reactjs.org/'>React</a>, <a href='https://www.typescriptlang.org/'>TypeScript</a>, <a href='https://redux.js.org/'>Redux</a>, <a href='https://redux-saga.js.org/'>ReduxSaga</a> and <a href='https://material-ui.com/'>MaterialUI</a>. This involves creating and maintaining the new mobile and desktop web. Integration tests are written using <a href='https://jestjs.io/'>Jest</a> and <a href='https://testing-library.com'>testing-library</a>. E2E tests are written with <a href='https://www.cypress.io/'>Cypress</a>. Visual regression tests are handled by <a href='https://percy.io/'>Percy</a>.",
             "Maintaining a UI component library built with <a href='http://tailwindcss.com/'>Tailwind</a>, <a href='https://material-ui.com/'>MaterialUI</a>, <a href='https://www.typescriptlang.org/'>TypeScript</a> and <a href='https://rollupjs.org/'>Rollup</a> with support for <a href='https://storybook.js.org/'>Storybook</a>",
             "Ensure developer experience is smooth by incorporating <a href='https://www.docker.com/'>Docker</a> and <a href='https://docs.gitlab.com/ee/ci/'>Gitlab CICD</a> into the workflow. This includes automating development setup, tests, releases and post releases. Automatic CHANGELOGs are generated via <a href='https://www.conventionalcommits.org'>conventional commit</a> messages."
@@ -70,6 +70,7 @@
     }
   ],
   "technicalSkills": [
+    "Golang",
     "Node.js",
     "HTML",
     "CSS",
