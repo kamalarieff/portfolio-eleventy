@@ -13,10 +13,25 @@ const {
 } = require('@fortawesome/free-solid-svg-icons');
 const { faGithub, faLinkedin } = require('@fortawesome/free-brands-svg-icons');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-
+const markdownIt = require('markdown-it');
+const markdownItAnchor = require('markdown-it-anchor');
 
 module.exports = function (config) {
   config.addPlugin(syntaxHighlight);
+  const markdownLib = markdownIt({
+    html: true,
+  }).use(markdownItAnchor, {
+    level: 1,
+    permalink: markdownItAnchor.permalink.linkInsideHeader({
+      symbol: `
+      <span class="hidden">Jump to heading</span>
+      <span aria-hidden="true">#</span>
+    `,
+      placement: 'after',
+    }),
+  });
+  config.setLibrary('md', markdownLib);
+
   config.setLiquidOptions({
     dynamicPartials: true,
   });
