@@ -90,7 +90,7 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
     "tailwindcss": "^2.1.2",
-    "workbox-cli": "^6.1.5"
+    "workbox-cli": "^6.5.3"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
