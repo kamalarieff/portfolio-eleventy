@@ -49,32 +49,27 @@ eleventyExcludeFromCollections: true
                     <p class="text-blue-500 font-bold uppercase mb-2">Work Experience</p>
                     <div class="space-y-2">
                         {% for item in resume.workExperience %}
-                            <p class="font-bold">{{ item.company }}</p>
-                            {% for jobExperience in item.jobExperience %}
-                                <div>
-                                    <div class="flex justify-between">
-                                        <p class="font-bold">{{ jobExperience.position }}</p>
-                                        <p class="font-medium text-gray-600">{{ jobExperience.date }}</p>
+                            {% if item.company != "Brilliance Information" %}
+                                <p class="font-bold">{{ item.company }}</p>
+                                {% for jobExperience in item.jobExperience %}
+                                    <div>
+                                        <div class="flex justify-between">
+                                            <p class="font-bold">{{ jobExperience.position }}</p>
+                                            <p class="font-medium text-gray-600">{{ jobExperience.date }}</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <ul class="list-disc list-inside">
-                                    {% for responsibility in jobExperience.responsibilities %}
-                                        <li>
-                                            {{ responsibility }}
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            {% endfor %}
+                                    <ul class="list-disc list-inside">
+                                        {% for responsibility in jobExperience.responsibilities %}
+                                            <li>
+                                                {{ responsibility }}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endfor %}
+                            {% endif %}
                         {% endfor %}
                     </div>
                 </div>
-                <!-- Education -->
-                <p style="page-break-after: always;">&nbsp;</p>
-                <p style="page-break-before: always;">&nbsp;</p>
-                <br>
-                <br>
-                <br>
-                <br>
                 <div>
                     <p class="text-blue-500 font-bold uppercase mb-2">Education</p>
                     {% for item in resume.education %}

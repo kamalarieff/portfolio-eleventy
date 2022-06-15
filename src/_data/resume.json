@@ -14,13 +14,26 @@
     "Team Player",
     "Responsible"
   ],
-  "hobbies": ["Programming", "Football", "Cycling"],
+  "hobbies": ["Programming", "Cycling", "Football"],
   "workExperience": [
+    {
+      "company": "InstaHome",
+      "jobExperience": [
+        {
+          "date": "Feb 2022 - Present",
+          "position": "Senior Software Engineer",
+          "responsibilities": [
+            "Improved performance of file uploads and downloads by leveraging <a href='https://nodejs.org/'>Node.js</a> Streams",
+            "In charge of handling the handover for the entire front end project"
+          ]
+        }
+      ]
+    },
     {
       "company": "Mudah.my",
       "jobExperience": [
         {
-          "date": "Feb 2019 - Present",
+          "date": "Feb 2019 - Feb 2022",
           "position": "Senior Software Engineer",
           "responsibilities": [
             "Ported the SEO converter API from <a href='https://nodejs.org/'>Node.js</a> to <a href='https://go.dev/'>Golang</a> for better performance and better use of resources. At the same time, new URL patterns are also introduced which increased complexity. Moved from imperative style of coding to declaration to handle the complexity. Additionally, created a sitemap service to generate all possible URLs in Golang that reads from a config API. Used <a href='https://kubernetes.io/docs/concepts/workloads/controllers/job/'>Kubernetes Jobs</a> that runs daily to generate these sitemaps and upload them to <a href='https://cloud.google.com/storage'>Google Cloud Storage</a>.",
