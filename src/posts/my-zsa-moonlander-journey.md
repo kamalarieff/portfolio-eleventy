@@ -27,7 +27,7 @@ After doing some researching, I finally settled on the ZSA Moonlander.
 
 # Price
 
-A lot of reviews mentioned the high cost of this keyboard. Here's my take on it:
+A lot of reviews mentioned the high cost of this keyboard. Here's my take:
 
 For me, expensive is a relative term. I may not have a gauge on what is expensive or not since this is my first time buying a truly expensive keyboard. I think paying 300 dollars for a well built, respectable company, 2 years warrany, good customer support, friendly configurator UI is well worth the money.
 
