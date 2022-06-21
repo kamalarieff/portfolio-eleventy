@@ -7,7 +7,7 @@ intro:
   title: About me
 ---
 
-I'm a full stack developer from InstaHome mainly focusing on JavaScript language. React for frontend, Node.js for backend.
+I'm a full stack developer looking for work mainly focusing on JavaScript language. React for frontend, Node.js for backend.
 
 I'm usually on the computer most of the time coding and learning. When I'm not on the computer, I enjoy cycling.
 
