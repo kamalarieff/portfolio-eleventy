@@ -20,7 +20,7 @@
       "company": "InstaHome",
       "jobExperience": [
         {
-          "date": "Feb 2022 - Present",
+          "date": "Feb 2022 - Jun 2022",
           "position": "Senior Software Engineer",
           "responsibilities": [
             "Improved performance of file uploads and downloads by leveraging <a href='https://nodejs.org/'>Node.js</a> Streams",
